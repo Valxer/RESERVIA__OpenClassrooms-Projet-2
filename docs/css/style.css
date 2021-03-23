@@ -1,0 +1,111 @@
+@font-face {
+	font-family:'RalewayBold';
+	src: url('./font/Raleway/static/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family:'Raleway';
+	src: url('./font/Raleway/static/Raleway-Medium.ttf');
+}
+
+body {
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+h2, h3, h4 {
+	font-family: 'RalewayBold';
+}
+
+h2, h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+#head {
+	width:	94%;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top: -8px;
+}
+
+#logo {
+	width: 60%;
+}
+
+#nav {
+	width : 30%;
+	height : 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#buttons {
+	list-style: none;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+li {
+	width: 45%;
+	height: 100%;
+	text-align: center;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+li a {
+	margin-top: 22px;
+}
+
+li:hover, #register:hover{
+	background-color: #F2F2F2;
+	border-top: 2px solid #0065FC;
+}
+
+li a:visited {
+	color:black;
+}
+
+li:enabled {
+	border-top: 2px solid #0065FC;
+}
+
+#register {
+	width : 10%;
+	height: 98%;
+	text-align: center;
+	color: #0065FC;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#register p {
+	padding-top: 20px;
+}
+
+#register a:visited {
+	color: #0065FC;
+}
