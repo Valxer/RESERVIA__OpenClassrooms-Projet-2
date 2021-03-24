@@ -1,3 +1,25 @@
+/**
+ * Fix fonts that render as bold in Firefox
+ *
+ * Put this near the top of your style.css
+ * Before any overriding styles
+ */
+ html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 400;
+  }
+  
+  /**
+   * Firefox specific rule
+   */
+  @-moz-document url-prefix() {
+	body {
+	  font-weight: lighter !important;
+	}
+  }
+  
+
 @font-face {
 	font-family:'RalewayBold';
 	src: url('./font/Raleway/static/Raleway-ExtraBold.ttf');
@@ -12,6 +34,10 @@
 	font-family:'RalewaySemiBold';
 	src: url('./font/Raleway/static/Raleway-SemiBold.ttf');
 }
+
+/***********************************************************
+Règles globales de polices 
+************************************************************/
 
 body {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -37,6 +63,10 @@ h4 {
 a:link {
 	text-decoration: none;
 }
+
+/***********************************************************
+Style header
+************************************************************/
 
 #head {
 	width:	94%;
@@ -114,6 +144,10 @@ li:enabled {
 #register a:visited {
 	color: #0065FC;
 }
+
+/***********************************************************
+Style barre de recherche
+************************************************************/
 
 #searchblock {
 	margin-top: 15px;
@@ -196,6 +230,10 @@ form {
 	font-weight: 500;
 }
 
+/***********************************************************
+Style barre de filtres
+************************************************************/
+
 #filters {
 	margin-top: 10px;
 	width: 94%;
@@ -274,6 +312,10 @@ form {
 #info p {
 	margin-left: 10px;
 }
+
+/***********************************************************
+Réglage de la couleur des étoiles de notation
+************************************************************/
 
 i.fas.fa-star[lang="blue"] {
 	color: #0065FC;
