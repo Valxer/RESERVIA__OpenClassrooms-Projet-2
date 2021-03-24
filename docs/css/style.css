@@ -274,3 +274,11 @@ form {
 #info p {
 	margin-left: 10px;
 }
+
+i.fas.fa-star[lang="blue"] {
+	color: #0065FC;
+}
+
+i.fas.fa-star[lang="grey"] {
+	color: #F2F2F2;
+}
