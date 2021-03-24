@@ -4,35 +4,34 @@
  * Put this near the top of your style.css
  * Before any overriding styles
  */
- html {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-weight: 400;
-  }
-  
-  /**
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+/**
    * Firefox specific rule
    */
-  @-moz-document url-prefix() {
-	body {
-	  font-weight: lighter !important;
-	}
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
   }
-  
-
-@font-face {
-	font-family:'RalewayBold';
-	src: url('./font/Raleway/static/Raleway-ExtraBold.ttf');
 }
 
 @font-face {
-	font-family:'Raleway';
-	src: url('./font/Raleway/static/Raleway-Medium.ttf');
+  font-family: "RalewayBold";
+  src: url("./font/Raleway/static/Raleway-ExtraBold.ttf");
 }
 
 @font-face {
-	font-family:'RalewaySemiBold';
-	src: url('./font/Raleway/static/Raleway-SemiBold.ttf');
+  font-family: "Raleway";
+  src: url("./font/Raleway/static/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url("./font/Raleway/static/Raleway-SemiBold.ttf");
 }
 
 /***********************************************************
@@ -40,28 +39,31 @@ Règles globales de polices
 ************************************************************/
 
 body {
-	font-family: 'Raleway', Arial, Helvetica, sans-serif;
-	font-size: 15px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-h2, h3, h4 {
-	font-family: 'RalewayBold';
+h2,
+h3,
+h4 {
+  font-family: "RalewayBold";
 }
 
-h2, h3 {
-	font-size: 1.5em;
+h2,
+h3 {
+  font-size: 1.5em;
 }
 
 h4 {
-	font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 a:link {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /***********************************************************
@@ -69,74 +71,75 @@ Style header
 ************************************************************/
 
 #head {
-	width:	94%;
-	height: 90px;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
-	justify-content: space-between;
-	margin-top: -8px;
+  width: 94%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: -8px;
 }
 
 #logo {
-	width: 60%;
+  width: 60%;
 }
 
 #nav {
-	width : 30%;
-	height : 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttons {
-	list-style: none;
-	width: 80%;
-	height: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+  list-style: none;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #buttons a {
-	width: 45%;
-	height: 100%;
-	text-align: center;
-	color: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 li {
-	padding-top: 22px;
+  padding-top: 22px;
 }
 
-#buttons a:hover, #register:hover{
-	background-color: #F2F2F2;
-	border-top: 2px solid #0065FC;
+#buttons a:hover,
+#register:hover {
+  background-color: #f2f2f2;
+  border-top: 2px solid #0065fc;
 }
 
 #register {
-	width : 10%;
-	height: 98%;
-	text-align: center;
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  width: 10%;
+  height: 98%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #register a {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #register p {
-	padding-top: 30px;
-	color: #0065FC;
+  padding-top: 30px;
+  color: #0065fc;
 }
 
 /***********************************************************
@@ -144,84 +147,84 @@ Style barre de recherche
 ************************************************************/
 
 #searchblock {
-	margin-top: 15px;
-	width: 94%;
-	display: flex;
-	flex-direction: column;
+  margin-top: 15px;
+  width: 94%;
+  display: flex;
+  flex-direction: column;
 }
 
 #subphrase {
-	margin-top: -10px;
-	margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 #searchsubblock {
-	margin-top: 0px;
-	display: flex;
-	align-items: center;
-	height: 50px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  height: 50px;
 }
 
 #mapicon {
-	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
-	background-color: #F2F2F2;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	width: 50px;
-	font-size: large;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  font-size: large;
 }
 
 form {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	height: 100%;
-	width: 375px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 375px;
 }
 
 #searchbar {
-	margin-top: 0px;
-	height: 48px;
-	width: 235px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-top: 1px solid #F2F2F2;
-	border-bottom: 1px solid #F2F2F2;
+  margin-top: 0px;
+  height: 48px;
+  width: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 #lieu {
-	width: 100%;
-	height: 46px;
-	border-style: none;
-	font-family: 'RalewayBold';
-	font-size: 1.2em;
-	text-indent: 20px;
+  width: 100%;
+  height: 46px;
+  border-style: none;
+  font-family: "RalewayBold";
+  font-size: 1.2em;
+  text-indent: 20px;
 }
 
 #lieu::placeholder {
-	color: black;
-	font-weight: 400;
+  color: black;
+  font-weight: 400;
 }
 
 #search {
-	width: 140px;
-	height: 100%;
+  width: 140px;
+  height: 100%;
 }
 #submit {
-	width: 100%;
-	height: 100%;
-	border-style: none;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	background-color: #0065FC;
-	color: white;
-	font-family: 'RalewaySemiBold';
-	font-size: 1.2em;
-	font-weight: 500;
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #0065fc;
+  color: white;
+  font-family: "RalewaySemiBold";
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 /***********************************************************
@@ -229,87 +232,87 @@ Style barre de filtres
 ************************************************************/
 
 #filters {
-	margin-top: 10px;
-	width: 94%;
-	height: 150px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
+  margin-top: 10px;
+  width: 94%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #filtertitle {
-	width: 95px;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding-left: 5px;
+  width: 95px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
 }
 
 #filters h3 {
-	font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 #filterblocks {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .icon {
-	display: flex;
-	align-items: center;
-	border: 2px solid lightgrey;
-	border-radius: 30px;
-	margin-right: 25px;
-	border-left-style: none;
-	height: 46px;
+  display: flex;
+  align-items: center;
+  border: 2px solid lightgrey;
+  border-radius: 30px;
+  margin-right: 25px;
+  border-left-style: none;
+  height: 46px;
 }
 
 .icon:hover {
-	background-color: #F2F2F2;
-	cursor: pointer;
+  background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 .icon i {
-	width: 50px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  background-color: #deebff;
+  border-radius: 100%;
 }
 
 .icon h3 {
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding-right: 25px;
-	padding-left: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-right: 25px;
+  padding-left: 5px;
 }
 
 #info {
-	width: 100%;
-	display: flex;
-	align-items: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #infoicon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 22px;
-	width: 22px;
-	font-size: small;
-	color: #0065FC;
-	border-radius: 100%;
-	border: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  width: 22px;
+  font-size: small;
+  color: #0065fc;
+  border-radius: 100%;
+  border: 1px solid lightgrey;
 }
 
 #info p {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 /***********************************************************
@@ -317,9 +320,9 @@ Réglage de la couleur des étoiles de notation
 ************************************************************/
 
 i.fas.fa-star[lang="blue"] {
-	color: #0065FC;
+  color: #0065fc;
 }
 
 i.fas.fa-star[lang="grey"] {
-	color: #F2F2F2;
+  color: #f2f2f2;
 }
