@@ -100,7 +100,7 @@ Style header
 	justify-content: space-between;
 }
 
-li {
+#buttons a {
 	width: 45%;
 	height: 100%;
 	text-align: center;
@@ -110,20 +110,12 @@ li {
 	justify-content: center;
 }
 
-li a {
-	margin-top: 22px;
+li {
+	padding-top: 22px;
 }
 
-li:hover, #register:hover{
+#buttons a:hover, #register:hover{
 	background-color: #F2F2F2;
-	border-top: 2px solid #0065FC;
-}
-
-li a:visited {
-	color:black;
-}
-
-li:enabled {
 	border-top: 2px solid #0065FC;
 }
 
@@ -131,17 +123,19 @@ li:enabled {
 	width : 10%;
 	height: 98%;
 	text-align: center;
-	color: #0065FC;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#register p {
-	padding-top: 20px;
+#register a {
+	height: 100%;
+	width: 100%;
 }
 
-#register a:visited {
+#register p {
+	padding-top: 30px;
 	color: #0065FC;
 }
 
@@ -270,6 +264,11 @@ Style barre de filtres
 	margin-right: 25px;
 	border-left-style: none;
 	height: 46px;
+}
+
+.icon:hover {
+	background-color: #F2F2F2;
+	cursor: pointer;
 }
 
 .icon i {
