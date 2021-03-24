@@ -128,8 +128,7 @@ li:enabled {
 }
 
 #searchsubblock {
-	border: 
-	margin-top: 10px;
+	margin-top: 0px;
 	display: flex;
 	align-items: center;
 	height: 50px;
@@ -198,29 +197,80 @@ form {
 }
 
 #filters {
-	margin-top: 25px;
+	margin-top: 10px;
 	width: 94%;
+	height: 150px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	border: 1px solid black;
 }
 
-#filters h3:nth-child(1) {
-	border: 1px solid red;
-	width: 100px;
+#filtertitle {
+	width: 95px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-left: 5px;
+}
+
+#filters h3 {
+	font-size: 1.2em;
 }
 
 #filterblocks {
 	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .icon {
 	display: flex;
+	align-items: center;
+	border: 2px solid lightgrey;
+	border-radius: 30px;
+	margin-right: 25px;
+	border-left-style: none;
+	height: 46px;
+}
+
+.icon i {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 100%;
+}
+
+.icon h3 {
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding-right: 25px;
+	padding-left: 5px;
 }
 
 #info {
 	width: 100%;
 	display: flex;
+	align-items: center;
+}
+
+#infoicon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 22px;
+	width: 22px;
+	font-size: small;
+	color: #0065FC;
+	border-radius: 100%;
+	border: 1px solid lightgrey;
+}
+
+#info p {
+	margin-left: 10px;
 }
