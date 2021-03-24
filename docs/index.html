@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Reservia</title>
+		<link rel="page icon" href="./images/logo/Reservia@3x.png">
 		<link rel="stylesheet" href="./css/style.css">
 		<script src="https://kit.fontawesome.com/1cd9585249.js" crossorigin="anonymous"></script>
 	</head>
@@ -22,13 +23,13 @@
 			</div>
 		</header>
 		<section id="searchblock"> <!-- section avec la barre de recherche-->
-			<h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-			<p>En plein centre ville ou en pleine nature</p>
+			<h2 id="searchphrase">Trouvez votre hébergement pour des vacances de rêve</h2>
+			<p id="subphrase">En plein centre ville ou en pleine nature</p>
 			<div id="searchsubblock">
-				<i class="fas fa-map-marker-alt"></i>
+				<i class="fas fa-map-marker-alt" id="mapicon"></i>
 				<form>
 					<div id="searchbar">
-						<input type="Lieu" name="Lieu" id="Lieu" placeholder="Marseille, France" required>
+						<input type="Lieu" name="Lieu" id="lieu" placeholder="Marseille, France" required>
 					</div>
 					<div id="search">
 						<input type="submit" value="Rechercher" id="submit">
@@ -57,7 +58,7 @@
 				</span>
 			</div>
 			<div id="info">
-				<i class="fas fa-info"></i>
+				<i class="fas fa-info" id="infoicon"></i>
 				<p>Plus de 500 logements dans cette ville</p>
 			</div>
 		</section>
