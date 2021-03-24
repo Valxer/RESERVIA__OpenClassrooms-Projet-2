@@ -319,10 +319,10 @@ Style barre de filtres
 Réglage de la couleur des étoiles de notation
 ************************************************************/
 
-i.fas.fa-star[lang="blue"] {
+i.fas.fa-star[lang="fr"] {
   color: #0065fc;
 }
 
-i.fas.fa-star[lang="grey"] {
+i.fas.fa-star[lang="fr-BE"] {
   color: #f2f2f2;
 }
