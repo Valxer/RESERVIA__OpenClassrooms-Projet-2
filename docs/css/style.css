@@ -102,18 +102,22 @@ Style header
   justify-content: space-between;
 }
 
-#buttons a {
+li {
   width: 45%;
   height: 100%;
   text-align: center;
-  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-li {
-  padding-top: 22px;
+li a {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: black;
 }
 
 #buttons a:hover,
@@ -138,7 +142,7 @@ li {
 }
 
 #register p {
-  padding-top: 30px;
+  padding-top: 19px;
   color: #0065fc;
 }
 
