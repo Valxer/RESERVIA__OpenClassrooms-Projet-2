@@ -398,6 +398,7 @@ Style partie hébergements
   border: 5px solid white;
   border-radius: 15px;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
 }
 
 .box a {
@@ -407,6 +408,10 @@ Style partie hébergements
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.box a:hover {
+  cursor: zoom-in;
 }
 
 .box a:visited{
