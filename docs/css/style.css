@@ -51,6 +51,7 @@ h2,
 h3,
 h4 {
   font-family: "RalewayBold";
+  font-weight: 400;
 }
 
 h2,
@@ -112,12 +113,12 @@ li {
 }
 
 li a {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 #buttons a:hover,
@@ -209,15 +210,31 @@ form {
   text-indent: 20px;
 }
 
-#lieu::placeholder {
-  color: black;
+::placeholder {
   font-weight: 400;
+  transition: 200ms;
+  font-style: italic;
+}
+
+#lieu:focus {
+  outline: 1px solid #0065fc;
+}
+
+#lieu:focus::placeholder {
+  opacity: 0;
 }
 
 #search {
   width: 140px;
   height: 100%;
 }
+
+/*@media(max-width: ???px){
+  #search{
+    width: 50px;
+  }
+}*/
+
 #submit {
   width: 100%;
   height: 100%;
@@ -229,6 +246,10 @@ form {
   font-family: "RalewaySemiBold";
   font-size: 1.2em;
   font-weight: 500;
+}
+
+#submit2 {
+  display: none;
 }
 
 /***********************************************************
@@ -274,7 +295,9 @@ Style barre de filtres
 }
 
 .icon:hover {
+  transition: 400ms;
   background-color: #f2f2f2;
+  color: #0065fc;
   cursor: pointer;
 }
 
@@ -329,4 +352,71 @@ i.fas.fa-star[lang="fr"] {
 
 i.fas.fa-star[lang="fr-BE"] {
   color: #f2f2f2;
+}
+
+/***********************************************************
+Style partie hébergements
+************************************************************/
+
+#hebergement {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#normal {
+  background-color: #f2f2f2;
+  width: 65%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  border-radius: 15px;
+}
+
+#normal-title {
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#normal-photos {
+  align-self: center;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.box {
+  width: 30%;
+  min-width: 150px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.box a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  border: 1px solid red;
+}
+
+.box a img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+#trending {
+  background-color: #f2f2f2;
+  width: 30%;
 }
