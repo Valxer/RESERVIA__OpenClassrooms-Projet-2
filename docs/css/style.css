@@ -1,24 +1,3 @@
-/**
- * Fix fonts that render as bold in Firefox
- *
- * Put this near the top of your style.css
- * Before any overriding styles
- */
-html {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 400;
-}
-
-/**
-   * Firefox specific rule
-   */
-@-moz-document url-prefix() {
-  body {
-    font-weight: lighter !important;
-  }
-}
-
 @font-face {
   font-family: "RalewayBold";
   src: url("./font/Raleway/static/Raleway-ExtraBold.ttf");
@@ -365,6 +344,8 @@ Style partie hébergements
   align-items: flex-start;
 }
 
+/************** Normaux ************************************/
+
 #normal {
   background-color: #f2f2f2;
   width: 65%;
@@ -397,8 +378,13 @@ Style partie hébergements
   background-color: white;
   border: 5px solid white;
   border-radius: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.box:hover {
+  transform: scale(1.1);
+  transition: 200ms;
 }
 
 .box a {
@@ -414,7 +400,7 @@ Style partie hébergements
   cursor: zoom-in;
 }
 
-.box a:visited{
+.box a:visited {
   color: black;
 }
 
@@ -450,15 +436,115 @@ Style partie hébergements
 
 .boxtext span {
   height: 20px;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 #normal-see-more {
-  width: 90%;
-  margin-top: 15px;
+  padding: 4px;
+  border-radius: 5px;
+  align-self: flex-start;
+  margin-top: 5px;
+  margin-left: 5%;
 }
+
+#normal-see-more:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
+#normal-see-more a:visited {
+  color: black;
+}
+
+/****************** Tendances ****************************/
 
 #trending {
   background-color: #f2f2f2;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 15px;
+  height: 550px;
+}
+
+#trending-title {
+  width: 80%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ #trending-title i {
+  font-size: 1.5em;
+ }
+
+ #trending-photos {
+  width: 80%;
+  min-width: 200px;
+  height: 430px;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+ }
+
+.trendingbox {
+  width: 100%;
+  height: 115px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+}
+
+.trendingbox:hover {
+  transform: scale(1.1);
+  transition: 200ms;
+}
+
+.trendingbox a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.trendingbox a:hover {
+  cursor: zoom-in;
+}
+
+.trendingbox a:visited {
+  color: black;
+}
+
+.trendingbox a img {
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.trendingtextbox {
+  width :57%;
+  height: 90%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trendingname h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.trendingname p {
+  margin-top: 0px;
 }
