@@ -55,8 +55,8 @@ Style header
   height: 90px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: flex-end;
-  justify-content: space-between;
   margin-top: -8px;
 }
 
@@ -66,7 +66,7 @@ Style header
 
 #nav {
   width: 30%;
-  height: 100%;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -110,7 +110,6 @@ li a {
   width: 10%;
   height: 98%;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,12 +207,6 @@ form {
   height: 100%;
 }
 
-/*@media(max-width: ???px){
-  #search{
-    width: 50px;
-  }
-}*/
-
 #submit {
   width: 100%;
   height: 100%;
@@ -227,8 +220,10 @@ form {
   font-weight: 500;
 }
 
-#submit2 {
-  display: none;
+@media (min-width: 769px) {
+  #submit2 {
+    display: none;
+  }
 }
 
 /***********************************************************
@@ -238,7 +233,6 @@ Style barre de filtres
 #filters {
   margin-top: 10px;
   width: 94%;
-  height: 150px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -477,11 +471,11 @@ Style partie hébergements
   align-items: center;
 }
 
- #trending-title i {
+#trending-title i {
   font-size: 1.5em;
- }
+}
 
- #trending-photos {
+#trending-photos {
   width: 80%;
   min-width: 200px;
   height: 430px;
@@ -490,7 +484,7 @@ Style partie hébergements
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
- }
+}
 
 .trendingbox {
   width: 100%;
@@ -532,7 +526,7 @@ Style partie hébergements
 }
 
 .trendingtextbox {
-  width :57%;
+  width: 57%;
   height: 90%;
   margin-left: 20px;
   display: flex;
@@ -606,8 +600,9 @@ Style partie activités
   margin-left: 15px;
 }
 
-#vieux-port img, #calanques img {
-  height : 390px;
+#vieux-port img,
+#calanques img {
+  height: 390px;
 }
 
 #pomègues {
@@ -615,7 +610,7 @@ Style partie activités
   width: 100%;
 }
 
-#pomègues img{
+#pomègues img {
   height: 176px;
 }
 
@@ -633,7 +628,7 @@ Style partie activités
   width: 100%;
 }
 
-#notre-dame img{
+#notre-dame img {
   height: 133px;
 }
 
