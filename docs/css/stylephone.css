@@ -1,8 +1,4 @@
 @media (max-width: 768px) {
-  body {
-    background-color: burlywood;
-  }
-
   /*********************************************************
 ****************** SEARCH **********************************
 ***********************************************************/
@@ -74,7 +70,9 @@
     height: auto;
   }
 
-  .activity div, #vieux-port, #calanques{
+  .activity div,
+  #vieux-port,
+  #calanques {
     height: 150px;
     margin-bottom: 25px;
   }
