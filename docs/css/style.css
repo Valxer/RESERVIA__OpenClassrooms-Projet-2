@@ -252,6 +252,7 @@ Style barre de filtres
 }
 
 #filterblocks {
+  width: 830px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -262,7 +263,7 @@ Style barre de filtres
   align-items: center;
   border: 2px solid lightgrey;
   border-radius: 30px;
-  margin-right: 25px;
+  margin-right: 10px;
   border-left-style: none;
   height: 46px;
 }

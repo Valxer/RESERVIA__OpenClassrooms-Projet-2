@@ -1,7 +1,126 @@
 @media (max-width: 1024px) {
-	
-	body {
-		background-color: darkcyan;
-	}
+  body {
+    background-color: darkcyan;
+  }
 
+  /*********************************************************
+****************** HEADER **********************************
+***********************************************************/
+
+  #head {
+    height: 130px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  #logo {
+    height: 60px;
+    width: 70%;
+    padding-top: 10px;
+  }
+
+  #nav {
+    order: 1;
+    width: 100%;
+    justify-self: center;
+    height: 90px;
+  }
+
+  #buttons {
+    width: 100%;
+  }
+
+  #buttons:nth-child(1) {
+    margin-left: -40px;
+  }
+
+  li {
+    width: 50%;
+    height: 70px;
+    border-bottom: 3px solid #f2f2f2;
+  }
+
+  #register {
+    width: 28%;
+    height: 70px;
+  }
+
+  #register p {
+    padding-top: 10px;
+  }
+
+  #buttons li:hover {
+    border-bottom: 3px solid #0065fc;
+  }
+
+  #buttons a:hover {
+    border-top: none;
+  }
+
+  #register:hover {
+    border-top: none;
+    border-radius: 15px;
+  }
+
+  /*********************************************************
+****************** FILTERS *********************************
+***********************************************************/
+
+  #filterblocks {
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    margin-bottom: 15px;
+  }
+
+  /*********************************************************
+****************** HEBERGEMENT *****************************
+***********************************************************/
+
+  #hebergement {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  #normal {
+    order: 1;
+    width: 107%;
+    margin-left: -4%;
+    margin-top: -10px;
+    background-color: transparent;
+  }
+
+  #normal-photos {
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box {
+    width: 75%;
+    height: 200px;
+  }
+
+  .box a img {
+    max-height: 125px;
+  }
+
+  #trending {
+    width: 120%;
+    margin-left: -10%;
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+
+  .trendingbox {
+    width: 75%;
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  /*********************************************************
+****************** ACTIVITES *******************************
+***********************************************************/
 }
