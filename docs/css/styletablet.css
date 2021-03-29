@@ -37,6 +37,10 @@
     border-bottom: 3px solid #f2f2f2;
   }
 
+  #first {
+    border-bottom: 3px solid #0065fc;
+  }
+
   #register {
     width: 28%;
     height: 70px;
