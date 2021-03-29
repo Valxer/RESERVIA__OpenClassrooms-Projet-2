@@ -569,14 +569,13 @@ Style partie activités
 
 #bloc-photos {
   width: 100%;
-  height: 450px;
   display: flex;
   justify-content: space-between;
 }
 
 .activity {
   width: 23%;
-  height: 100%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -611,45 +610,47 @@ Style partie activités
   margin-left: 15px;
 }
 
-#vieux-port img,
-#calanques img {
-  height: 390px;
-}
+@media (min-width: 769px) {
+  #vieux-port img,
+  #calanques img {
+    height: 390px;
+  }
 
-#pomègues {
-  height: 52.5%;
-  width: 100%;
-}
+  #pomègues {
+    height: 52.5%;
+    width: 100%;
+  }
 
-#pomègues img {
-  height: 176px;
-}
+  #pomègues img {
+    height: 176px;
+  }
 
-#frioul {
-  height: 37%;
-  width: 100%;
-}
+  #frioul {
+    height: 37%;
+    width: 100%;
+  }
 
-#frioul img {
-  height: 106px;
-}
+  #frioul img {
+    height: 106px;
+  }
 
-#notre-dame {
-  height: 43%;
-  width: 100%;
-}
+  #notre-dame {
+    height: 43%;
+    width: 100%;
+  }
 
-#notre-dame img {
-  height: 133px;
-}
+  #notre-dame img {
+    height: 133px;
+  }
 
-#longchamp {
-  height: 47%;
-  width: 100%;
-}
+  #longchamp {
+    height: 47%;
+    width: 100%;
+  }
 
-#longchamp img {
-  height: 151px;
+  #longchamp img {
+    height: 151px;
+  }
 }
 
 /***********************************************************
@@ -657,7 +658,8 @@ Style partie footer
 ************************************************************/
 
 #foot {
-  width: 100%;
+  width: 102%;
+  margin-left: -1%;
   background-color: #f2f2f2;
   display: flex;
   justify-content: flex-start;

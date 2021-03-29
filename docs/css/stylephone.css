@@ -51,8 +51,50 @@
   .trendingbox {
     width: 100%;
   }
-}
 
-.box {
-  width: 100%;
+  .box {
+    width: 100%;
+  }
+  /*********************************************************
+****************** ACTIVITES *******************************
+***********************************************************/
+  #activites {
+    width: 90%;
+    margin-top: 0px;
+  }
+
+  #bloc-photos {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .activity {
+    width: 100%;
+    height: auto;
+  }
+
+  .activity div, #vieux-port, #calanques{
+    height: 150px;
+    margin-bottom: 25px;
+  }
+
+  .activity img {
+    height: 90px;
+  }
+
+  /*********************************************************
+****************** FOOTER **********************************
+***********************************************************/
+
+  #foot {
+    width: 106%;
+    margin-left: -3%;
+    flex-direction: column;
+    font-size: larger;
+  }
+
+  .foot-section {
+    margin-left: 15%;
+  }
 }
