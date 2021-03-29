@@ -335,7 +335,7 @@ Style partie hébergements
   width: 94%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 /************** Normaux ************************************/
@@ -343,7 +343,6 @@ Style partie hébergements
 #normal {
   background-color: #f2f2f2;
   width: 65%;
-  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -374,6 +373,12 @@ Style partie hébergements
   border-radius: 15px;
   margin-bottom: 25px;
   box-shadow: 1px 1px 10px 5px rgb(0 0 0 / 20%);
+}
+
+@media (max-width: 1170px) {
+  .box {
+    width: 45%;
+  }
 }
 
 .box:hover {
@@ -457,10 +462,9 @@ Style partie hébergements
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 15px;
-  height: 550px;
 }
 
 #trending-title {
@@ -478,17 +482,19 @@ Style partie hébergements
 #trending-photos {
   width: 80%;
   min-width: 200px;
-  height: 430px;
+  height: 77%;
   margin-top: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .trendingbox {
   width: 100%;
-  height: 115px;
+  height: 27%;
+  min-width: 250px;
   background-color: white;
   border: 5px solid white;
   border-radius: 15px;
@@ -541,6 +547,10 @@ Style partie hébergements
 
 .trendingname p {
   margin-top: 0px;
+}
+
+.trendingtextbox span {
+  margin-bottom: 0px;
 }
 
 /***********************************************************
