@@ -1,5 +1,5 @@
 @media (max-width: 1024px) {
-   /*********************************************************
+  /*********************************************************
 ****************** HEADER **********************************
 ***********************************************************/
 
@@ -20,7 +20,7 @@
     width: 100%;
     justify-self: center;
     height: 90px;
-	font-size: larger;
+    font-size: larger;
   }
 
   #buttons {
@@ -55,7 +55,11 @@
   }
 
   #register:hover {
+    transform: scale(1.1);
+    transition: 100ms;
+    font-style: italic;
     border-top: none;
+    background-color: transparent;
     border-radius: 15px;
   }
 

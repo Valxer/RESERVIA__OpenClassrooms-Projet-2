@@ -675,3 +675,11 @@ Style partie footer
   margin-top: 20px;
   margin-bottom: 30px;
 }
+
+#foot a {
+  color: black;
+}
+
+#foot a:visited {
+  color: black;
+}
