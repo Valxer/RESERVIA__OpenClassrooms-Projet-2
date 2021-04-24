@@ -44,6 +44,10 @@
   ********************* HEBERGEMENT *************************
   **********************************************************/
 
+#normal-photos, #trending-photos {
+  width: 80%;
+}
+
   .trendingbox {
     width: 100%;
   }
@@ -57,9 +61,11 @@
   #activites {
     width: 90%;
     margin-top: 0px;
+    align-items: center;
   }
 
   #bloc-photos {
+    width: 95%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -86,8 +92,7 @@
 ***********************************************************/
 
   #foot {
-    width: 106%;
-    margin-left: -3%;
+    width: 100%;
     flex-direction: column;
     font-size: larger;
   }

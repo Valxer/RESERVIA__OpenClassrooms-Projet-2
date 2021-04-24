@@ -24,6 +24,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin: 0px;
 }
 
 h2,
@@ -58,6 +59,7 @@ Style header
   justify-content: center;
   align-items: flex-end;
   margin-top: -8px;
+  overflow: hidden;
 }
 
 #logo {
@@ -247,6 +249,7 @@ Style barre de filtres
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 
 #filtertitle {
@@ -348,6 +351,7 @@ Style partie hébergements
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  overflow: hidden;
 }
 
 /************** Normaux ************************************/
@@ -670,8 +674,7 @@ Style partie footer
 ************************************************************/
 
 #foot {
-  width: 102%;
-  margin-left: -1%;
+  width: 100%;
   background-color: #f2f2f2;
   display: flex;
   justify-content: flex-start;

@@ -84,14 +84,14 @@
 ***********************************************************/
 
   #hebergement {
+    width: 100%;
     margin-top: 20px;
     flex-direction: column;
   }
 
   #normal {
     order: 1;
-    width: 107%;
-    margin-left: -4%;
+    width: 100%;
     margin-top: -10px;
     background-color: transparent;
   }
@@ -113,10 +113,13 @@
   }
 
   #trending {
-    width: 120%;
-    margin-left: -10%;
+    width: 100%;
     border-radius: 0px;
     margin-bottom: 20px;
+  }
+
+  #trending-photos {
+    width: 90%;
   }
 
   .trendingbox {
