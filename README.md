@@ -25,4 +25,4 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab il doit être hébergé sur Gitpages
 
 ## Tester le projet
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [valxer.github.io/KevinLeVanPhung_2_16032021/](https://valxer.github.io/KevinLeVanPhung_2_16032021/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne :  [valxer.github.io/KevinLeVanPhung_2_16032021/](https://valxer.github.io/RESERVIA__OpenClassrooms-Projet-2/)
